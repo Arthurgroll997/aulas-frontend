@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Conversor Monetário</title>
+    </head>
+    <body>
+        <input type="number" id="dinheiro" step="any" />
+        <button id="converter">Converter</button>
+        <p id="resposta">&lt;RESPOSTA&gt;</p>
+    </body>
+    <script>
+        "use strict";
+
+        const dinheiro = window.document.querySelector("#dinheiro");
+        const btnConverter = window.document.querySelector("#converter");
+
+        btnConverter.addEventListener("click", () => {
+            const din = dinheiro.value;
+            console.log(`Dinheiro: ${din}`);
+        });
+    </script>
+</html>
