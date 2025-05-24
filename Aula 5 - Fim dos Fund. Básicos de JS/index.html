@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula 5 - Jogo da Forca</title>
+    <link rel="stylesheet" href="./style.css"/>
+</head>
+<body>
+    <div class="container">
+        <h1>Jogo da Forca</h1>
+        
+        <div class="input-group">
+            <label for="palavra" class="configuracoes">Entre com a palavra</label>
+            <input type="text" id="palavra" class="configuracoes" placeholder="Palavra..." />
+        
+        
+            <input type="button" class="button configuracoes" id="iniciar" value="Iniciar jogo" />
+            
+            <div id="container-jogo" class="hide jogo">
+                <img id="img-jogo" alt="Imagem do personagem na forca" src="img/img5.png" height="250px"/>
+            </div>
+
+            <label for="resposta-atual" class="hide jogo">Letreiro atual</label>
+            <div id="container-resposta" class="resposta-area hide jogo">
+                <span id="resposta-atual">_ _ _ _ _</span>
+            </div>
+
+            <label for="erradas" class="hide jogo">Mural das letras incorretas</label>
+            <p id="erradas" class="resposta-area hide jogo">Nenhuma letra errada ainda...</p>
+
+            <label for="chances" class="hide jogo">Chances restantes</label>
+            <p id="chances" class="resposta-area hide jogo">5 chances restantes...</p>
+
+            <label for="letra" class="hide jogo">Letra</label>
+            <input type="text" id="letra" class="hide jogo" maxlength="1" placeholder="Letra..." />
+
+            <input type="button" class="button configuracoes hide jogo" id="chutar" value="Chutar letra" />
+        </div>
+    </div>
+
+    <script src="index.js" type="text/javascript"></script>
+</body>
+</html>

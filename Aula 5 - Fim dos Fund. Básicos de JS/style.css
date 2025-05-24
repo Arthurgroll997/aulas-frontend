@@ -1,0 +1,147 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f2f5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    padding: 20px;
+}
+
+.container {
+    background-color: white;
+    border-radius: 12px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    width: 100%;
+    max-width: 500px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.header {
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+h1 {
+    color: #2c3e50;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.input-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #34495e;
+}
+
+input {
+    padding: 12px 15px;
+    border: 2px solid #e0e0e0;
+    border-radius: 8px;
+    font-size: 15px;
+    transition: all 0.3s ease;
+}
+
+input:focus {
+    border-color: #3498db;
+    outline: none;
+    box-shadow: 0 0 0 3px rgba(52, 152, 219, 0.2);
+}
+
+.button-container {
+    display: flex;
+    margin-top: 10px;
+}
+
+.button {
+    background-color: #3498db;
+    color: white;
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    flex: 1;
+}
+
+.button:hover {
+    background-color: #2980b9;
+}
+
+.resposta-container {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+#container-jogo, .resposta-area {
+    background-color: #fff;
+    border: 1px solid #dee2e6;
+    border-radius: 8px;
+    padding: 15px;
+    /* min-height: 120px; */
+    font-family: 'Consolas', monospace;
+    position: relative;
+}
+
+.resposta-tag {
+    position: absolute;
+    top: -10px;
+    left: 10px;
+    background-color: #3498db;
+    color: white;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.resposta-content {
+    margin-top: 10px;
+    color: #2c3e50;
+}
+
+@media (max-width: 480px) {
+    .container {
+        padding: 20px;
+    }
+    
+    h1 {
+        font-size: 20px;
+    }
+}
+
+.basic-list {
+    list-style-type: disc;
+    margin: 10px 0;
+    padding-left: 25px;
+    line-height: 1.5;
+    font-family: Arial, sans-serif;
+}
+
+#resposta-atual {
+    display: block;
+    margin: auto;
+    width: fit-content;
+}
+
+.hide {
+    display: none;
+}
