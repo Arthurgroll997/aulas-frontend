@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aula de exemplo de loja</title>
+    <link rel="stylesheet" href="style.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap" rel="stylesheet" />
+</head>
+<body>
+    <!-- Vitrine -->
+    <div id="vitrine-page">
+        <header class="header">
+            <h1>Minha Loja</h1>
+            <button class="admin-button" id="adminBtn">Admin</button>
+        </header>
+        <main class="product-list" id="productList">
+            <!-- Produtos -->
+        </main>
+    </div>
+
+    <!-- Pág de Adm -->
+    <div id="admin-page" class="hidden">
+        <header class="header">
+            <h1>Administração</h1>
+            <button class="go-back-btn" id="backBtn">Voltar</button>
+        </header>
+        <form id="adminForm" class="admin-form">
+            <input type="text" id="title" placeholder="Título do produto" required />
+            <textarea id="description" placeholder="Descrição do produto" required></textarea>
+            <input type="file" id="image" accept="image/*" />
+            <input type="number" id="price" placeholder="Preço" required step="0.01" />
+            <button class="create-product-btn" type="submit">Criar Produto</button>
+            <p id="successMsg" class="success-msg hidden">Produto criado com sucesso!</p>
+        </form>
+    </div>
+
+    <!-- Popup do Produto -->
+    <div id="productPopup" class="popup hidden">
+        <div class="popup-content" id="productPopupContent"></div>
+    </div>
+
+    <!-- Popup da Compra -->
+    <div id="qrPopup" class="popup hidden">
+        <div class="popup-content" id="qrContent">
+            <!-- QRCode -->
+        </div>
+    </div>
+
+    <script src="fetch-functions.js" type="module"></script>
+    <script src="script.js" type="module"></script>
+</body>
+</html>
